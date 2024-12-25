@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8f1f9; /* Light blue background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0073e6; /* Primary blue header */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b3c7e6; /* Lighter blue on hover */
+}
+
+.section {
+    padding: 60px 0;
+    background-color: #f0f8ff; /* Very light blue background for sections */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #005b96; /* Darker blue for headings */
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #006bb3; /* Slightly lighter dark blue for subheadings */
+}
+
+.card {
+    background-color: #ffffff; /* White card with subtle blue border */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border: 1px solid #b3c7e6; /* Light blue border */
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #005b96; /* Dark blue for links */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b3c7e6; /* Light blue border */
+}
+
+.project-card h3 {
+    color: #005b96; /* Dark blue for project titles */
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.project-card a {
+    color: #0073e6; /* Blue for links */
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #b3c7e6;
+    font-size: 16px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+form button {
+    background-color: #0073e6; /* Blue button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005b96; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #0073e6; /* Blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack project cards on small screens */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller heading on mobile */
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+    }
+
+    form button {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller base font size for very small screens */
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card, .project-card {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 10px 12px;
+    }
+    .image-container img {
+            max-width: 100%; /* Ensures the image doesn’t overflow its container */
+            width: 200px; /* Sets a fixed width */
+            height: auto; /* Maintains the aspect ratio */
+            display: block; /* Centers the image and avoids extra space */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius: 8px; /* Optional: Rounds the corners */
+        
+        
+        
+    }
+    
+    
+
+
+
+}
